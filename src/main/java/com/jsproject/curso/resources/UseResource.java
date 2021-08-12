@@ -18,7 +18,7 @@ import com.jsproject.curso.service.UserService;
 @RequestMapping(value = "/users")
 public class UseResource {
 
-	@Autowired
+	@Autowired 
 	private UserService service;
 
 	// método que responde requisicão http
@@ -33,7 +33,7 @@ public class UseResource {
 		User obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
-	
+
 	
 	
 
